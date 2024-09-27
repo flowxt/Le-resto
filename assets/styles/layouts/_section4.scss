@@ -1,7 +1,7 @@
 .section4{
     padding: 50px 20px 90px;
 
-    .event-container{
+    .events-container{
         max-width: 1000px;
         margin: 0 auto;
 
@@ -30,6 +30,52 @@
             "a b"
             "c b";
 
+            .date-content{
+                background: $black;
+                height: 86px;
+                width: 86px;
+                margin: 0 auto;
+                color: $white;
+                @include childCenter;
+                flex-direction: column;
+                line-height: 22px;
+
+                h6{
+                    font-size: 1.7rem;
+                    
+                }
+
+            }
+            .address{
+                background: $white;
+
+                h3{
+                    letter-spacing: 1px;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    padding-left: 8px;
+                }
+                p{
+                    font-size: 0.9rem;
+                    color: $grey;
+                    margin-top: 20px;
+                    letter-spacing: 1px;
+
+                    i{
+                        margin-right: 3px;
+                        font-size: 0.7rem;
+                        transform: translateY(-2px);
+
+                        &:nth-child(2){
+                            margin-left: 1Opx;
+                        }
+                    }
+                }
+                h5{
+                    letter-spacing: 2px;
+                    margin-top: 25px;
+                }
+            }
             .event-1 {
                 grid-area: a;
             }
