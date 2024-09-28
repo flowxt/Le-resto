@@ -29,6 +29,7 @@
             grid-template-areas: 
             "a b"
             "c b";
+            gap: 10px;
 
             .date-content{
                 background: $black;
@@ -67,7 +68,7 @@
                         transform: translateY(-2px);
 
                         &:nth-child(2){
-                            margin-left: 1Opx;
+                            margin-left: 10px;
                         }
                     }
                 }
@@ -76,14 +77,51 @@
                     margin-top: 25px;
                 }
             }
+            .event-left{
+                display: grid;
+                grid-template-columns: 39% 61%;
+                text-align: left;
+
+                .date{
+                    @include childCenter;
+                }
+                .address{
+                    color: $black;
+                    padding: 30px 20px;
+                }
+
+            }
             .event-1 {
                 grid-area: a;
+
+                .date{
+                    background: url(../img/event-01.jpg) center/cover;
+                }
             }
             .event-2 {
-                grid-area: b;
+                grid-area: c;
+
+                .date{
+                    background: url(../img/event-02.jpg) center/cover;
+                }
             }
             .event-3 {
-                grid-area: c;
+                grid-area: b;
+                    background: url(../img/event-03.jpg) center/cover;
+                    padding: 25px;
+                    
+                    .address{
+                        height: 100%;
+                        padding: 0 12px;
+
+                        h3{
+                            margin: 40px 0 15px;
+                        }
+                        h5{
+                            padding: 45px 0;
+                        }
+                    }
+                
             }
 
         }

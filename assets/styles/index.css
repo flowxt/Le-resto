@@ -350,6 +350,7 @@ header .header-text div h6 {
   grid-template-columns: 58% 42%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "a b" "c b";
+  gap: 10px;
 }
 .section4 .events-container .event-grid .date-content {
   background: #21201e;
@@ -387,18 +388,85 @@ header .header-text div h6 {
   transform: translateY(-2px);
 }
 .section4 .events-container .event-grid .address p i:nth-child(2) {
-  margin-left: 1Opx;
+  margin-left: 10px;
 }
 .section4 .events-container .event-grid .address h5 {
   letter-spacing: 2px;
   margin-top: 25px;
 }
+.section4 .events-container .event-grid .event-left {
+  display: grid;
+  grid-template-columns: 39% 61%;
+  text-align: left;
+}
+.section4 .events-container .event-grid .event-left .date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section4 .events-container .event-grid .event-left .address {
+  color: #21201e;
+  padding: 30px 20px;
+}
 .section4 .events-container .event-grid .event-1 {
   grid-area: a;
 }
+.section4 .events-container .event-grid .event-1 .date {
+  background: url(../img/event-01.jpg) center/cover;
+}
 .section4 .events-container .event-grid .event-2 {
-  grid-area: b;
+  grid-area: c;
+}
+.section4 .events-container .event-grid .event-2 .date {
+  background: url(../img/event-02.jpg) center/cover;
 }
 .section4 .events-container .event-grid .event-3 {
-  grid-area: c;
+  grid-area: b;
+  background: url(../img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+.section4 .events-container .event-grid .event-3 .address {
+  height: 100%;
+  padding: 0 12px;
+}
+.section4 .events-container .event-grid .event-3 .address h3 {
+  margin: 40px 0 15px;
+}
+.section4 .events-container .event-grid .event-3 .address h5 {
+  padding: 45px 0;
+}
+
+.section5 {
+  padding: 70px 0 230px;
+  position: relative;
+}
+.section5:after {
+  content: "";
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  background: url(../img/gmap.jpg);
+  left: 0;
+  bottom: 0;
+}
+.section5 .quote-container {
+  background: #eee;
+  position: relative;
+  z-index: 3;
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 65px 70px;
+  box-shadow: 0 0 3px #333;
+}
+.section5 .quote-container::before {
+  content: "";
+  position: absolute;
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 60px;
+  width: 60px;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 30px;
 }/*# sourceMappingURL=index.css.map */
