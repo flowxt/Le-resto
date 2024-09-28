@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Allura";
   src: url(../fonts/Allura-Regular.ttf);
@@ -469,4 +470,86 @@ header .header-text div h6 {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 30px;
+}
+.section5 .quote-container .text-container {
+  line-height: 30px;
+}
+.section5 .quote-container .text-container:before {
+  content: "❝";
+}
+.section5 .quote-container .text-container:after {
+  content: "❞";
+}
+.section5 .quote-container .text-container:before, .section5 .quote-container .text-container:after {
+  font-size: 1.5rem;
+}
+.section5 .quote-container h2 {
+  margin: 30px 0 15px;
+  font-family: "Roboto", serif;
+  font-weight: 100;
+}
+.section5 .quote-container p {
+  color: rgb(166, 114, 69);
+}
+
+footer {
+  background: url(../img/bg-footer.jpg) center/cover;
+  text-align: left;
+  padding: 65px 32px;
+  color: #eee;
+}
+footer .footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .footer-content .left-part {
+  padding-right: 30px;
+  line-height: 30px;
+}
+footer .footer-content h2 {
+  font-family: "Allura", cursive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: rgb(166, 114, 69);
+  margin-bottom: 15px;
+}
+footer .footer-content p {
+  font-size: 0.9rem;
+  color: rgb(182, 182, 182);
+}
+footer .footer-content .right-part {
+  padding-left: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+footer .footer-content .right-part h3 {
+  font-size: 0.85rem;
+}
+footer .footer-content .right-part input {
+  margin-top: 15px;
+  background: none;
+  border: 1px solid rgba(166, 114, 69, 0.151);
+  padding: 7px 13px;
+  width: 250px;
+}
+footer .footer-content .right-part .follow-us {
+  display: flex;
+  margin-top: 50px;
+}
+footer .footer-content .right-part .follow-us ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #595956;
+  font-size: 0.8rem;
+  width: 200px;
+}
+footer .footer-content .right-part .follow-us ul i {
+  transition: 0.2s;
+}
+footer .footer-content .right-part .follow-us ul i:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=index.css.map */
